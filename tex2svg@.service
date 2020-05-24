@@ -1,0 +1,14 @@
+[Unit]
+Description=tex2svg daemon
+
+[Service]
+User=www-data
+Group=www-data
+Type=simple
+ExecStart=/usr/bin/node /usr/bin/tex2svg.js %i
+ExecReload=/bin/kill -HUP $MAINPID
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
+
