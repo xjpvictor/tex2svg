@@ -1,6 +1,6 @@
 # TeX2SVG
 
-Allow running with node to produce SVG file with TeX input
+Allow running with node to produce SVG file with TeX input, powered by MathJax API
 
 ## INSTALL
 
